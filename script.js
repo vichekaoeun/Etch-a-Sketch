@@ -9,6 +9,7 @@ gridContainer.setAttribute("class", "gridContainer");
 let row = document.getElementsByClassName("row");
 let column = document.getElementsByClassName("column");
 
+// Loop to initialize Grid
 for (i = 0; i < 16; i++) {
     for (j = 0; j < 16; j++) {
         const grid = document.createElement('div');
