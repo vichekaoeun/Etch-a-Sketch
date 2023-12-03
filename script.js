@@ -11,12 +11,17 @@ let column = document.getElementsByClassName("column");
 
 // Loop to initialize Grid
 for (i = 0; i < 16; i++) {
+    const row = document.createElement('div');
+
     for (j = 0; j < 16; j++) {
         const grid = document.createElement('div');
         grid.setAttribute("class", "grids");
         gridContainer.appendChild(grid);
     }
+
+    gridContainer.appendChild(row);
 }
+
 
 
 const controls = document.createElement('div');
