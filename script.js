@@ -17,11 +17,15 @@ for (i = 0; i < 16; i++) {
         const grid = document.createElement('div');
         grid.setAttribute("class", "grids");
         gridContainer.appendChild(grid);
+
+        // Drawing Mechanic
+        grid.addEventListener('mouseover', function () {
+            this.classList.add("change-color");
+        });
     }
 
     gridContainer.appendChild(row);
 }
-
 
 
 const controls = document.createElement('div');
@@ -32,5 +36,4 @@ controls.setAttribute("class", "controls");
 const titlename = document.createElement('header');
 titlename.textContent = "Etch-A-Sketch";
 title.appendChild(titlename);
-
 
