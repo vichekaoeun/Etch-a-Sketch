@@ -21,12 +21,14 @@ sizebtn.textContent = "Resize"
 row = 16;
 column = 16;
 
+// Resize grid button
 sizebtn.addEventListener('click', () => {
     row = prompt("Enter your desired row length");
     column = prompt("Enter your desired column length");
     createGrid(row, column);
 })
 createGrid(row, column)
+
 // Loop to initialize Grid
 function createGrid() {
     for (i = 0; i < row; i++) {
