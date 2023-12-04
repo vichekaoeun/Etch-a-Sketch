@@ -40,3 +40,8 @@ body {
 .change-color {
     background-color: black;
 }
+
+.controls {
+    display: flex;
+    margin-top: 20px;
+}
