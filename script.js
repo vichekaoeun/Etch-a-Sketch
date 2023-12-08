@@ -24,8 +24,8 @@ column = 16;
 
 // Resize grid button
 sizebtn.addEventListener('click', () => {
-    row = prompt("Enter your desired number of squares (1-100)");
-    if (row === null || row === '' || row > 100) {
+    row = prompt("Enter your desired number of squares (1-50)");
+    if (row === null || row === '' || row > 50) {
         return;
     }
     column = row;
