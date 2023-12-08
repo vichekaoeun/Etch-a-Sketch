@@ -24,9 +24,11 @@ column = 16;
 
 // Resize grid button
 sizebtn.addEventListener('click', () => {
-    row = prompt("Enter your desired row length");
-    column = prompt("Enter your desired column length");
-    createGrid(row, column);
+    row = prompt("Enter your desired nxn size ");
+    if (row === null || row === '') {
+        return;
+    }
+    column = row;
 
     // Clearing old grid
     while (gridContainer.firstChild) {
@@ -55,6 +57,13 @@ function createGrid() {
 
         gridContainer.appendChild(row);
     }
+    // Adjust the size of the grids based on the new row and column values
+    const grids = document.querySelectorAll('.grids');
+    const gridSize = 90 / column;
+    grids.forEach(grid => {
+        grid.style.width = `${gridSize}%`;
+        grid.style.height = `${gridSize}%`;
+    })
 }
 
 

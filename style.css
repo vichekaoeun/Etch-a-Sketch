@@ -9,24 +9,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
-    width: 600px;
-    height: 500px;
+    justify-content: space-between;
+    width: 900px;
+    height: 800px;
     background-color: #ff7575;
 }
 
 .gridContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
-    height: 288px;
+    width: 500px;
+    height: 300px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .grids {
     display: flex;
-    width: 16px;
-    height: 16px;
     border-style: solid;
     border-width: 1px;
     border-color: #edebeb;
@@ -35,6 +34,7 @@ body {
 
 .title {
     font-size: 30px;
+
 }
 
 .change-color {
@@ -43,5 +43,9 @@ body {
 
 .controls {
     display: flex;
-    margin-top: 20px;
+    margin: 20px;
+}
+
+.sizebtn {
+    padding: 15px;
 }
