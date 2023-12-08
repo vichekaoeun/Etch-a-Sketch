@@ -14,6 +14,7 @@ container.appendChild(controls);
 controls.setAttribute("class", "controls");
 const sizebtn = document.createElement('button');
 
+// Resize button
 controls.appendChild(sizebtn);
 sizebtn.setAttribute("class", "sizebtn");
 sizebtn.textContent = "Resize"
@@ -25,6 +26,13 @@ column = 16;
 sizebtn.addEventListener('click', () => {
     row = prompt("Enter your desired row length");
     column = prompt("Enter your desired column length");
+    createGrid(row, column);
+
+    // Clearing old grid
+    while (gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild);
+    }
+
     createGrid(row, column);
 })
 createGrid(row, column)
@@ -48,7 +56,6 @@ function createGrid() {
         gridContainer.appendChild(row);
     }
 }
-
 
 
 // Content setup
